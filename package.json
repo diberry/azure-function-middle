@@ -3,6 +3,12 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
+  "author": "diberry",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diberry/azure-function-middleware.git"
+  },
   "scripts": {
     "test": "jest",
     "clean": "rimraf build/*",
