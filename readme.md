@@ -13,7 +13,7 @@ module.exports = async function (context, myBlob) {
     const blobTrigger = new fnMiddleWare.BlobTrigger();
 
     // send in blob, get back queue message for out param
-    context.bindings.outputQueueItem = blobTrigger(context.bindingData.myBlob);
+    context.bindings.outputQueueItem = blobTrigger.readBlobFileText(context.bindingData.myBlob);
 
     context.done();
 
@@ -31,7 +31,7 @@ module.exports = async function (context, myQueueItem) {
     const queueTrigger = new fnMiddleWare.QueueTrigger();
 
     // send in queue message, get back queue message for out param
-    context.bindings.outputQueueItem = queueTrigger(myQueueItem);
+    context.bindings.outputQueueItem = queueTrigger.detectText(myQueueItem);
 
     context.done();
 
