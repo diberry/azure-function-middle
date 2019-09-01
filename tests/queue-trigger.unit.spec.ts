@@ -6,7 +6,7 @@ describe('QueueTrigger', () => {
     it('should process queue message', (done) => {
 
         try {
-
+            jest.setTimeout(99000);
             const queueTriggerProcessing = new QueueTrigger();
             const incomingMessageFromQueue={};
 

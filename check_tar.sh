@@ -1,0 +1,1 @@
+tar xvf  azure-function-middleware-0.0.2.tgz -C /c/Users/diberry/repos/dina/function-middleware/extraction
