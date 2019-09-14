@@ -1,6 +1,6 @@
 {
   "name": "azure-function-middleware",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -40,8 +40,8 @@
   "dependencies": {
     "applicationinsights": "^1.4.2",
     "await-sleep": "0.0.1",
-    "azure-storage-as-promised": "^0.8.4",
-    "cognitive-tools": "^0.4.1",
+    "azure-storage-as-promised": "^0.9.0",
+    "cognitive-tools": "^0.4.2",
     "string_decoder": "^1.3.0"
   }
 }

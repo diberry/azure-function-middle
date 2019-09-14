@@ -8,7 +8,7 @@ describe('BlobTrigger', () => {
         try {
             jest.setTimeout(99000);
             const appInsightsKey = process.env.APPINSIGHTS_INSTRUMENTATIONKEY;
-            const appInsightsRole = process.env.APPINSIGHTS_ROLE
+            const appInsightsRole = process.env.APPINSIGHTS_ROLE;
             //const environment = process.env.ENVIRONMENT;
 
             const configuration = {
