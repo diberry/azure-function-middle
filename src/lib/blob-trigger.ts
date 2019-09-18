@@ -34,10 +34,10 @@ export class BlobTrigger {
   }
   /**
    * 
-   * @param inputBindings - from Azure Function Trigger
+   * @param context - from Azure Function Trigger
    * @param myBlob - from Azure Function Trigger
    */
-  public async readTextBlob(inputBindings: Object, myBlob: any) {
+  public async readTextBlob(context: Object, myBlob: any) {
 
     try {
 
@@ -54,7 +54,7 @@ export class BlobTrigger {
         },true);      
       }
 
-      if(!inputBindings && !myBlob) {
+      if(!context && !myBlob) {
         await this.telemetry.send({
           message: fnName,
           properties: {
@@ -73,7 +73,7 @@ export class BlobTrigger {
         languages: ['de','it'],
         user: 'diberry',
         text: myText,
-        fileName: inputBindings["name"]
+        fileName: context["bindingData"].name
       };
 
       await this.telemetry.send({

@@ -1,0 +1,82 @@
+{
+    "invocationId": "5d058119-2132-47e4-bae1-d8fb3f6d0d3a",
+    "executionContext": {
+        "invocationId": "5d058119-2132-47e4-bae1-d8fb3f6d0d3a",
+        "functionName": "BlobTriggerText",
+        "functionDirectory": "D:\\home\\site\\wwwroot\\BlobTriggerText"
+    },
+    "bindings": {
+        "myBlob": {
+            "type": "Buffer",
+            "data": [
+                84,
+                104,
+                105,
+                115,
+                32,
+                105,
+                115,
+                32,
+                97,
+                32,
+                116,
+                101,
+                115,
+                116,
+                46
+            ]
+        }
+    },
+    "bindingData": {
+        "invocationId": "5d058119-2132-47e4-bae1-d8fb3f6d0d3a",
+        "blobTrigger": "upload/short.txt",
+        "uri": "https://diberryfn1b7df.blob.core.windows.net/upload/short.txt",
+        "properties": {
+            "cacheControl": null,
+            "contentDisposition": null,
+            "contentEncoding": null,
+            "contentLanguage": null,
+            "length": 15,
+            "contentMD5": "Eg6ool5dSHv2i19wlkQAGQ==",
+            "contentType": "text/plain",
+            "eTag": "\"0x8D72CF38C32F6BF\"",
+            "created": "2019-08-30T02:41:23+00:00",
+            "lastModified": "2019-08-30T02:41:23+00:00",
+            "blobType": 2,
+            "leaseStatus": 2,
+            "leaseState": 1,
+            "leaseDuration": 0,
+            "pageBlobSequenceNumber": null,
+            "appendBlobCommittedBlockCount": null,
+            "isServerEncrypted": true,
+            "isIncrementalCopy": false,
+            "standardBlobTier": 0,
+            "rehydrationStatus": null,
+            "premiumPageBlobTier": null,
+            "blobTierInferred": false,
+            "blobTierLastModifiedTime": null,
+            "deletedTime": null,
+            "remainingDaysBeforePermanentDelete": null
+        },
+        "metadata": {},
+        "name": "short.txt",
+        "myBlob": "upload/short.txt",
+        "sys": {
+            "methodName": "BlobTriggerText",
+            "utcNow": "2019-09-18T12:59:25.5991919Z",
+            "randGuid": "160aff9e-bacb-46a5-8fcb-c502400199d3"
+        }
+    },
+    "bindingDefinitions": [
+        {
+            "name": "myBlob",
+            "type": "blobTrigger",
+            "direction": "in"
+        },
+        {
+            "name": "outputQueueItem",
+            "type": "queue",
+            "direction": "out"
+        }
+    ]
+}

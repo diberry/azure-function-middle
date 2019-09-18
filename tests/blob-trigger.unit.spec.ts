@@ -42,7 +42,7 @@ describe('BlobTrigger', () => {
 
             const blobTriggerProcessing = new BlobTrigger(configuration);
  
-            const stringBindings = await fsPromises.readFile(path.join(__dirname,'../data/context.bindingdata.json'),'utf-8');
+            const stringBindings = await fsPromises.readFile(path.join(__dirname,'../data/context.bindingdata.BlogTrigger.2.json'),'utf-8');
             const bindings = JSON.parse(stringBindings);
             const blob = Buffer.from(blobString, "utf-8");
 
